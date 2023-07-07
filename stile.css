@@ -124,10 +124,180 @@ header{
  
 }
 
+main {
+    height: 40%;
+    width: 100%;
+    background-color:#fbfbfb ;
+    padding-top: 70px;
+    line-height: 1.2;
+    flex: 2;
+    margin-bottom: 0px;
+    min-width: 250px;
+    
+    }
+
+#foto { 
+        width: 20%;
+        height: auto;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        padding: 20px;
+        border: black;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+#inicio{
+    height: 40%;
+    width: 100%;
+    background-color: #fbfbfb;
+    line-height: 1.2;
+}
+#hola{
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: lato, sans-serif;
+}
+
+#cv{
+    width: 30%;
+    background-color:  #af599e;
+    color: #fbfbfb;
+    font-size: 20px;
+    padding: 10px 10px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: exo, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: lato, sans-serif;
+    
+
+
+}
+#cv a :hover {
+    background-color: #9920c2;
+}
+#primero{
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: lato, sans-serif;
+    
+
+}
+
+#contacto{
+    height: 20%;
+    width: 100%;
+    background-color: rgba(175, 89, 158, 0.3);
+    line-height: 1.2;
+    color: #0f0f0f;
+    margin-top: 500px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+#hablemos{
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    font-family: lato, sans-serif;
+}
+#segundo{
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: lato, sans-serif;
+
+}
+.link{
+    height: 200px;
+    width: auto;
+    display: block;
+    text-align: center;
+    background-color: #fbfbfb;
+    justify-items: center;
+    height: auto;
+        display: block;
+        margin: auto;
+        padding: 20px;
+       
+        margin-left: auto;
+        margin-right: auto;
+
+
+}
+#linkedin{
+    width: 40px; 
+    height: 40px;
+    text-align: center;
+    justify-items: center;
+      
+
+}
+#github{
+    width: 40px; 
+    height: 40px;
+    text-align: center;
+    justify-items: center;
+    
+}
+#mail{
+    width: 40px; 
+    height: 40px;
+    text-align: center;
+    justify-items: center;
+}
+footer{
+        height: 6%;
+        width: 100%;
+        background-color: #af599e;
+        max-width: 1200px;
+        margin: auto;
+        color: #fbfbfb;
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 1.2;
+        position: absolute;
+        bottom: 0;
+        font-family: lato, sans-serif;
+        margin-top: 0;
+        
+        }
+        
+    
+
+/* Para quitar los puntos a los items de listas */
 ul {
     list-style: none;
 }
+
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
 }
