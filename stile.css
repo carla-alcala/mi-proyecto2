@@ -1,0 +1,133 @@
+{
+    box-sizing: border-box;
+    margin:0 ;
+    padding:0 ;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 100%;
+    height: 80%;
+    background-color: #fbfbfb;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color:beige;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    position: fixed;
+    line-height: 1.2;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    
+    
+
+}
+ #logo{
+    max-width: 5rem;
+    height: auto;
+    display: block;
+    margin-left: 0px;
+    border-radius: 50%;
+    padding: 0px;
+    border: 2px solid black;
+    display: flex;
+    float: left;
+ }
+ .menu{
+    display: flex;
+    gap: 1rem
+
+ }
+ .menu li a { 
+    background-color:  transparent;
+    color: black;
+    font-size: 20px;
+    padding: 10px 40px;
+    display: block;
+    text-decoration: none;
+    font-family: exo, sans-serif;
+
+    
+    
+}
+.menu li a:hover {
+    background-color: #9920c2;
+
+}
+.menu > li{
+    float:right;
+
+}
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 140PX;
+    margin:0%;
+}
+.menu li:hover > ul {
+     display: block;
+} 
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+
+}
+@media  screen and (max-width:550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #0f0f0f;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: beige;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax #0f0f0f;
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: end;
+
+
+    }
+    .menu li a {
+        color: #0f0f0f;}
+ 
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
